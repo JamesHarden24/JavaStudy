@@ -1,0 +1,21 @@
+
+
+（1）html、CSS、js、flash....   静态web资源
+
+（2）由程序输出的数据           动态web资源
+	ASP.net  PHP  JSP/Servlet
+
+
+数据库：
+SqlServer  Oracle  MySql  DB2
+
+
+
+C/S 和  B/S
+
+Client/Server
+
+Browser/Server
+
+
+
