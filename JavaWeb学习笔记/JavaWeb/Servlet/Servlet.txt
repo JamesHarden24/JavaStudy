@@ -1,0 +1,14 @@
+一、Servlet
+    1.sun公司提供的一种动态web资源开发技术，本质升就是一段java小程序，可以将Servlet
+      加入到Servlet容器中运行。
+      Servlet容器  能够运行Servlet的环境叫做Servlet容器  --- tomcat
+      web容器      能够运行web应用的环境叫做web容器      --- tomcat
+    
+    2.写一个类实现sun公司定义的Servlet接口
+      将写好的类配置到tomcat中
+    
+    
+    
+    
+    
+    
