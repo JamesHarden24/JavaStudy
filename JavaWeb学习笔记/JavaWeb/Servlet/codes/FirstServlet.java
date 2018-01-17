@@ -1,11 +1,22 @@
 package com.blsh;
 
-import java.io.*;
-import javax.servlet.*;
+import java.io.IOException;
+import java.util.Date;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
-public class FirstServlet extends GenericServlet
-{
-	public void service(ServletRequest req, ServletResponse res) throws ServletException, java.io.IOException{
-		res.getWriter().write("Hello Servlet");
+public class FirstServlet extends HttpServlet {
+
+	public void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		response.getWriter().write("now time:"+new Date().toLocaleString());
 	}
+
+	public void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		doGet(request, response);
+	}
+
 }

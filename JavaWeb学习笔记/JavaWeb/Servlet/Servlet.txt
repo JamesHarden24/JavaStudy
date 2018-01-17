@@ -7,8 +7,33 @@
     2.写一个类实现sun公司定义的Servlet接口
       将写好的类配置到tomcat中
     
+二、Servlet的生命周期
+    Servlet在第一次被访问到的时候，服务器创建出Servlet对象，创建出对象后立即调用init方法
+    做初始化操作，创建出的对象会一直驻留在内存中为后续对这个Servlet的访问服务。每次对这个
+    Servlet的访问都会导致Servlet中service方法执行，当web应用被移除出容器或服务器被关闭时，
+    随着web应用的销毁Servlet会被销毁，在销毁之前服务会调用Servlet的destory方法做出一些善
+    后的工作。
+
+三、Servlet的继承接口
+    Servlet接口 -- 定义了Servlet应该具有的基本方法
+        |
+        |-- GenericServlet -- 通用基本Servlet实现，对于不常用的方法在这个类中进行了基本的实现，
+                              对于Service设计了抽象方法
     
-    
-    
-    
+四、Servlet的细节问题
+    （1）一个<servlet>可以对应多个<servlet-mapping>,从而一个Servlet可以有很多个路径来访问
+    （2）url-partten中的路径可以使用*匹配符号进行配置，但是要注意的是，只要是/开头/*结尾或者*.后缀这两种方式
+        ~由于*的引入，有可能一个路径被多个urlpartten匹配，这样优先级判断如下：
+            1> 哪个最像找哪个
+            2> *.后缀永远匹配级最低
+    （3）<servlet>可以配置<load-on-startup>来指定启动顺序
+    （4）缺省servlet:如果有一个Servlet的<url-partten>被配置为/，则表示该Servlet变成了缺省的Servlet，其他的
+                     Servlet都不匹配则使用缺省Servlet，其实对于静态资源的访问就是通过缺省Servlet完成的。
+
+
+
+
+
+
+
     
