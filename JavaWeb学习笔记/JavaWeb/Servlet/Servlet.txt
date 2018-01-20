@@ -30,7 +30,14 @@
     （4）缺省servlet:如果有一个Servlet的<url-partten>被配置为/，则表示该Servlet变成了缺省的Servlet，其他的
                      Servlet都不匹配则使用缺省Servlet，其实对于静态资源的访问就是通过缺省Servlet完成的。
 
-
+五、ServletContext -- 代表当前web应用
+    web容器在启动时，它会为每个web应用程序创建一个对应的ServletContext对象，它代表当前web应用。
+    1，作为域对象可以为整个web应用范围内共享数据
+        作用范围：整个web应用范围内共享数据
+        生命周期：当服务器启动web应用加载后创建出ServletContext对象后，域产生，当web应用被移除出容器或者服务关闭，随着web应用
+                  的销毁域销毁。
+    
+    
 
 
 
