@@ -1,0 +1,13 @@
+（1）web服务器收到客户端的http请求，会针对每一次请求，分别创建一个用于代表请求的
+     request对象、和代表相应的response对象。
+     request和response对象既然代表请求和响应，那我们要获取客户机提交过来得数据，只需要找request对象就行了。要
+     向客户机输出数据，只要找到respoonse对象就行了。
+     
+（2）response
+        ServletResponse -- 通用的response提供了一个响应应该具有最基本的属性和方法
+            |
+            |-HttpServletResponse -- 在ServletResponse的基础上对于HTTP协议增加了很多强化的属性和方法
+     
+     
+     
+     
