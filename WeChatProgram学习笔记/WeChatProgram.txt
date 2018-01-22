@@ -1,0 +1,16 @@
+微信小程序的实质
+
+（1）微信小程序实质上是Hybird技术的应用
+（2）Hybird App(混合模式移动应用)是指介于web-app、native-app两者之间的app，Hybird App同时
+    使用网页语言与程序语言开发，总体特征更接近Native App。只是因为同时使用了网页语言编码，
+    所以开发成本和难度比Native App要小很多。因此说，Hybird App兼具了Native App的所有优势，
+    也兼具Web App使用HTML5跨平台开发低成本的优势。
+
+微信小程序如何开发
+（1）主要技术:WXML(HTML5)、WXSS(css)、JavaScript。
+（2）开发思路:使用app开发的数据绑定渲染的思路，掌握微信提供的空间和接口，通过JavaScript实现
+     业务处理与服务器交互等操作。
+
+
+
+     
